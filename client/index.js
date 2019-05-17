@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from "./app"
 
-const template = <p>This is JSX from Webpack</p>
-ReactDOM.render(template,document.getElementById("app"));
+
+ReactDOM.render(<Header />,document.getElementById("app"));
