@@ -1,7 +1,8 @@
 const React = require("react");
+const Header = require("./components/header.js")
 
 
-class Header extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -10,7 +11,7 @@ class Header extends React.Component {
   render() {
 
     return(
-      <div>Will anything change?</div>
+      <Header />
     )
   }
 }
