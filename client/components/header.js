@@ -1,9 +1,12 @@
 const React = require("react");
+const InfoBar = require("./info_bar.js");
+const ProductBar = require("./product_bar.js");
 
 const Header = (props) => {
   return (
     <div>
-      Header
+      <InfoBar />
+      <ProductBar />
     </div>
   );
 }
