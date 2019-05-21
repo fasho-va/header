@@ -1,4 +1,4 @@
-const React = require("react");
+import React from "react";
 
 const ProductBar = (props) => {
   return (
@@ -8,4 +8,4 @@ const ProductBar = (props) => {
   )
 }
 
-module.exports = ProductBar;
+export default ProductBar;

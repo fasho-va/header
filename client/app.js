@@ -1,5 +1,5 @@
-const React = require("react");
-const Header = require("./components/header.js")
+import React from "react";
+import Header from "./components/header.js";
 
 
 class App extends React.Component {
@@ -16,4 +16,4 @@ class App extends React.Component {
   }
 }
 
-module.exports = App;
+export default App;

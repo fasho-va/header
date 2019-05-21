@@ -1,6 +1,6 @@
-const React = require("react");
-const InfoBar = require("./info_bar.js");
-const ProductBar = require("./product_bar.js");
+import React from "react";
+import InfoBar from "./info_bar.js";
+import ProductBar from "./product_bar.js";
 
 const Header = (props) => {
   return (
@@ -12,4 +12,4 @@ const Header = (props) => {
 }
 
 
-module.exports = Header;
+export default Header;
