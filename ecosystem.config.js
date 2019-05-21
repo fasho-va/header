@@ -1,13 +1,13 @@
 module.exports = {
   apps: [{
-    name: 'header',
+    name: 'fashova-header',
     script: 'server'
   }],
   deploy: {
     production: {
       user: 'ubuntu',
-      host: 'ec2-34-227-159-100.compute-1.amazonaws.com',
-      key: '~/.ssh/header.pem',
+      host: 'ec2-54-84-209-131.compute-1.amazonaws.com',
+      key: '~/.ssh/fashova-header.pem',
       ref: 'origin/master',
       repo: 'https://github.com/anthon78/header',
       path: '/home/ubuntu/header',
