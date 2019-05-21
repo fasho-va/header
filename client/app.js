@@ -16,4 +16,4 @@ class App extends React.Component {
   }
 }
 
-module.exports = Header;
+module.exports = App;

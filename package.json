@@ -12,7 +12,9 @@
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material-ui/core": "^3.9.3"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
