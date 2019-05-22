@@ -6,6 +6,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Autocomplete from 'react-autocomplete';
 import SearchIcon from '@material-ui/icons/Search';
+import PersonIcon from '@material-ui/icons/Person';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import CardTravelIcon from '@material-ui/icons/CardTravel';
 
 const InfoBar = (props) => {
   return (
@@ -36,6 +39,9 @@ const InfoBar = (props) => {
             onSelect={(val) => value = val}
           />
           <SearchIcon />
+          <PersonIcon />
+          <FavoriteIcon />
+          <CardTravelIcon />
         </Toolbar>
       </AppBar>
     </div>
