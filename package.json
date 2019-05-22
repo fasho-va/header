@@ -13,7 +13,11 @@
     "deploy": "pm2 deploy ecosystem.config.js production"
   },
   "dependencies": {
-    "@material-ui/core": "^3.9.3"
+    "@material-ui/core": "^3.9.3",
+    "material-ui-search-bar-enhanced": "^0.5.3",
+    "prop-types": "^15.7.2",
+    "react-autocomplete": "^1.8.1",
+    "react-search-box": "^2.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
