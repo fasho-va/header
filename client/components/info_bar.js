@@ -10,6 +10,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 
+
 const InfoBar = (props) => {
   return (
     <div>
