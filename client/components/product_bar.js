@@ -49,7 +49,9 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Two-Piece Swimsuits", "One-Piece Swimsuits", "Cover-Ups","Neon Brights","The Black Collection","Red, White, and Blue Swim",
+                "Mix & Match Seperates", "Beach Accessories", "Curve + Swim", "Sale Swim"
+              ]
                 } 
               title="Swimsuits"
               />
@@ -57,7 +59,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Tanks & Sleeveless", "Short Sleeve","Long Sleeve","Basic","Sale"]
                 } 
               title="Bodysuits"
               />
@@ -65,7 +67,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Tanks & Sleeveless", "Short Sleeve", "Long Sleeve", "Sale"]
                 } 
               title="Shirts & Blouses"
               />
@@ -73,7 +75,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Tanks & Sleeveless", "Short Sleeve", "Long Sleeve", "Graphics", "Crop Tops", "Off Shoulder", "Sale"]
                 } 
               title="Fashion Tops"
               />
@@ -81,7 +83,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Music Graphic Tees", "Oversized", "Short Sleeve", "Crop Tops", "BodySuits", "Long Sleeve", "Hoodies & Sweatshirts","Sale"]
                 } 
               title="Graphic Tees"
               />
@@ -89,7 +91,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Basic Bodysuits", "Tanks & Sleeveless", "Short Sleeve", "Long Sleeve", "Sale"]
                 } 
               title="Basic Tops"
               />
@@ -97,7 +99,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["Biker Shorts", "Denim Shorts", "Tie Waist", "Bermuda", "Booty Shorts", "Distressed", "High Rise", "Mid Rise", "Low Rise", "Color Shop"]
                 } 
               title="Shorts"
               />
@@ -105,7 +107,9 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "$15 Pants", "Pants", "Skirts", "Denim Skirts", "Leggings", "Biker Shorts", "Denim Shorts", "Shorts",
+                "$5.99 Leggings and Up", "Sale Shorts", "Sale Bottoms"  
+              ]
                 } 
               title="Bottoms"
               />
@@ -113,7 +117,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Short Sets", "Skirt Sets", "Pant Sets", "Wear To Work", "Sale Matching Sets"]
                 } 
               title="Matching Sets"
               />
@@ -121,7 +125,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Rompers", "Jumpsuits", "Sale Rompers and Jumpsuits"]
                 } 
               title="Rompers and Jumpsuits"
               />
@@ -129,7 +133,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["Prom Dresses", "Prom Shoes", "Prom Accessories", "Lingerie Essentials", "Prom Curve & Plus"]
                 } 
               title="Prom"
               />
@@ -137,7 +141,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["Curve + Plus"]
                 } 
               title="Luxe"
               />
@@ -145,7 +149,9 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Sexy Lingerie", "Bridal & Honeymoon", "Teddies + Babydolls", "Lingerie Sets", "Stockings", "Lingerie Essentials",
+                "Bras + Bralettes", "Panties", "Sleepwear + Robes", "Shapewear", "Sale Lingerie"
+              ]
                 } 
               title="Lingerie"
               />
@@ -153,7 +159,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Make A Move", "Active Tops", "Active Bottoms", "Active Sets", "Graphic Tees", "Sale Activewear"]
                 } 
               title="Activewear"
               />
@@ -161,7 +167,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Blazers", "Denim", "Kimonos", "Faux Fur", "Faux Leather + Suede", "Lightweight", "Outerwear", "Sale Jackets"]
                 } 
               title="Jackets"
               />
@@ -169,7 +175,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Cardigans & Sweater Coats", "Pullovers"]
                 } 
               title="Sweaters"
               />
@@ -177,7 +183,8 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Handbags", "Sunglasses", "Belts", "Hats & Scarves", "Legwear", "Hair Accessories", "Beauty", "Jewelry","Earrings", "Necklaces",
+                "Bracelets", "Body Jewelry", "Rings", "Sale Accessories"]
                 } 
               title="Accessories"
               />
@@ -185,7 +192,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["Matching Sets", "Dresses", "Tops", "Jackets", "Bottoms", "Plus"]
                 } 
               title="Wear To Work"
               />
@@ -193,7 +200,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["Back In Stock", "Best Sellers", "Coming Soon", "Cardi B SS 19", "Cardi Holiday 18", "Kylie", "Neon Collection", "The Vacation Shop"]
                 } 
               title="Collections"
               />
@@ -201,7 +208,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["New Arrivals", "Plus Sale", "Dresses", "Black Dresses", "Jeans", "Leggings", "Bottoms", "Jackets", "Sweaters"]
                 } 
               title="Plus Size & Curve"
               />
@@ -209,7 +216,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["$10 Dreses", "$15 Pants", "Sale Dresses", "Sale Matching Sets", "Sale Shoes", "Sale Jeans", "Sale Tops", "Sale Shorts"]
                 } 
               title="Sale"
               />
@@ -217,7 +224,7 @@ const ProductBar = (props) => {
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
-                ["Dress1", "Dress 2"]
+                ["Blowout", "$5 and Under", "$10 and Under", "$15 and Under", "$20 and Under"]
                 } 
               title="Last Chance"
               />
