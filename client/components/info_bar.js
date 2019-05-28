@@ -20,15 +20,15 @@ const InfoBar = (props) => {
             Fashova
           </TypoGraphy>
           <Tabs>
-            <Tab label = "Women"/>
-            <Tab label = "Curve"/>
-            <Tab label = "Men"/>
+            <Tab label="Women"/>
+            <Tab label="Curve"/>
+            <Tab label="Men"/>
           </Tabs>
           <Search />
-          <SearchIcon />
-          <PersonIcon />
-          <FavoriteIcon />
-          <CardTravelIcon />
+          <div style={{width: "70px"}}><SearchIcon /></div>
+          <div><PersonIcon /></div>
+          <div style={{margin: "10px"}}><FavoriteIcon /></div>
+          <div style={{marginLeft:"5px"}}><CardTravelIcon /></div>
         </Toolbar>
       </AppBar>
     </div>
