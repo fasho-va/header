@@ -11,6 +11,10 @@ import CardTravelIcon from '@material-ui/icons/CardTravel';
 import Search from '../components/search_bar';
 
 
+const widthModifier = {
+  width: `400px`,
+};
+
 const InfoBar = (props) => {
   return (
     <div>
@@ -20,11 +24,11 @@ const InfoBar = (props) => {
             Fashova
           </TypoGraphy>
           <Tabs>
-            <Tab label="Women"/>
-            <Tab label="Curve"/>
-            <Tab label="Men"/>
+            <Tab style={{width : '70px', minWidth: '70px', marginLeft : "250px", backgroundColor: "#000", color: "white", fontSize: ".75em", textAlign : "center", display : "inline-block"}} label="Women"/>
+            <Tab style={{width : '70px', backgroundColor: "#000", color: "white", minWidth: '70px'}} label="Curve"/>
+            <Tab style={{width : '70px', backgroundColor: "#000", color: "white", minWidth: '70px'}} label="Men"/>
           </Tabs>
-          <Search />
+          <div style={{marginLeft : "20px"}}><Search/></div>
           <div style={{width: "70px"}}><SearchIcon /></div>
           <div><PersonIcon /></div>
           <div style={{margin: "10px"}}><FavoriteIcon /></div>

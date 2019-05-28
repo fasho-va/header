@@ -1,5 +1,6 @@
 import Autosuggest from 'react-autosuggest';
 import React from "react";
+import Suggestion from "./suggestion";
 
 const theme = {
   container: {
@@ -120,7 +121,7 @@ function getSuggestionValue(suggestion) {
 
 function renderSuggestion(suggestion) {
   return (
-    <span>{suggestion.name}</span>
+    <Suggestion name={suggestion.name}/>
   );
 }
 
