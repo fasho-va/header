@@ -7,7 +7,7 @@ import ProductMenu from "./product_menu";
 
 const ProductBar = (props) => {
   return (
-    <div style ={{display: "flex", flexWrap : "wrap", justifyContent: "center", backgroundColor : "orange"}}>
+    <div style ={{display: "flex", flexWrap : "wrap", justifyContent: "center", backgroundColor : "black"}}>
           <div style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {

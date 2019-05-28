@@ -22,6 +22,7 @@ const ProductMenu = (props) => {
         aria-owns={anchorEl ? 'simple-menu' : undefined}
         aria-haspopup="true"
         onClick={handleClick}
+        style = {{color: "white"}}
       >
         {props.title}
       </Button>
