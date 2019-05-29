@@ -4,7 +4,7 @@ const db = mysql.createConnection({
   host : "fashova.cozsaqvvw0c6.us-east-1.rds.amazonaws.com",
   user: "root",
   password : "1a2b3c4d",
-  database: "fashova"
+  database: "clothing"
 });
 
 const retrieveInfo = (callback) => {
