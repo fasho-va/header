@@ -9,13 +9,13 @@ app.use(express.static('public'));
 
 
 //routes
-app.get("/api/names", (req,res) => {
-  db.retrieveAllNames((err,names) => {
+app.get("/api/info", (req,res) => {
+  db.retrieveInfo((err,info) => {
     if (err) {
       console.log("error", err);
     } else {
       res.status(200);
-      res.send(names);
+      res.send(info);
     }
   })
 })

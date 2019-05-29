@@ -5,19 +5,26 @@ import axios from "axios";
 class App extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      infoList : [],
+    }
   }
   componentWillMount() {
-    axios.get("http://localhost:3004/api/names/")
-    .then(names => {
-      console.log(names.data);
+    axios.get("http://localhost:3004/api/info/")
+    .then(info => {
+      return info.data;
+    })
+    .then(info => {
+      this.setState({
+        infoList : info,
+      })
     })
   }
 
   render() {
 
     return(
-      <Header />
+      <Header productInfo = {this.state.infoList}/>
     )
   }
 }

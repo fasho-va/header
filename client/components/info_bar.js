@@ -30,7 +30,7 @@ const InfoBar = (props) => {
             <p style={{paddingTop: "5px", paddingLeft: "4px"}}>Men</p>
             </div>
           </Tabs>
-          <div style={{marginLeft : "20px"}}><Search/></div>
+          <div style={{marginLeft : "20px"}}><Search productInfo={props.productInfo}/></div>
           <div style={{width: "70px"}}><SearchIcon /></div>
           <div><PersonIcon /></div>
           <div style={{margin: "10px"}}><FavoriteIcon /></div>

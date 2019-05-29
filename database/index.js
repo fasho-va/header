@@ -7,8 +7,8 @@ const db = mysql.createConnection({
   database: "fashova"
 });
 
-const retrieveAllNames = (callback) => {
-  let sql = "SELECT name FROM womens_jeans";
+const retrieveInfo = (callback) => {
+  let sql = "SELECT  uuid, name, price FROM womens_jeans";
   db.query(sql, (err,names) => {
     if (err) {
       callback(err);
@@ -19,5 +19,5 @@ const retrieveAllNames = (callback) => {
 }
 
 module.exports = {
-  retrieveAllNames,
+  retrieveInfo,
 }

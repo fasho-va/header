@@ -5,7 +5,7 @@ import ProductBar from "./product_bar.js";
 const Header = (props) => {
   return (
     <div>
-      <InfoBar />
+      <InfoBar productInfo = {props.productInfo} />
       <ProductBar />
     </div>
   );

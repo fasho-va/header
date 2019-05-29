@@ -126,19 +126,40 @@ function renderSuggestion(suggestion) {
 }
 
 class Search extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       value: '',
-      suggestions: []
+      suggestions: [],
     };
     this.onChange = this.onChange.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);    
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.getSuggestions = this.getSuggestions.bind(this);    
+  }
+  
+  getSuggestions(value) {
+    // return this.props.productInfo;
+    const escapedValue = escapeRegexCharacters(value.trim());
+  
+    if (escapedValue === '') {
+      return [];
+    }
+  
+    const regex = new RegExp('^' + escapedValue, 'i');
+  
+    return this.props.productInfo.filter(product => regex.test(product.name));
+  }
+
+  componentDidMount() {
+    this.setState({
+      products : this.props.productInfo,
+    })
   }
 
   onChange(event, { newValue, method }){
+    console.log(this.props.productInfo);
     this.setState({
       value: newValue
     });
@@ -146,7 +167,7 @@ class Search extends React.Component {
   
   onSuggestionsFetchRequested({ value }){
     this.setState({
-      suggestions: getSuggestions(value)
+      suggestions: this.getSuggestions(value)
     });
   };
 
