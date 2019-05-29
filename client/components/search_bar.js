@@ -63,7 +63,7 @@ function getSuggestionValue(suggestion) {
 
 function renderSuggestion(suggestion) {
   return (
-    <Suggestion name={suggestion.name}/>
+    <Suggestion name={suggestion.name} uuid={suggestion.uuid} price={suggestion.price}/>
   );
 }
 
