@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: 'ec2-54-174-153-122.compute-1.amazonaws.com',
+      host: 'ec2-3-86-106-16.compute-1.amazonaws.com',
       key: '~/.ssh/fashova-header.pem',
       ref: 'origin/master',
       repo: 'https://github.com/anthon78/header',
