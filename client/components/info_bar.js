@@ -11,10 +11,6 @@ import CardTravelIcon from '@material-ui/icons/CardTravel';
 import Search from '../components/search_bar';
 
 
-const widthModifier = {
-  width: `400px`,
-};
-
 const InfoBar = (props) => {
   return (
     <div>
@@ -24,9 +20,15 @@ const InfoBar = (props) => {
             Fashova
           </TypoGraphy>
           <Tabs>
-            <Tab style={{width : '70px', minWidth: '70px', marginLeft : "250px", backgroundColor: "#000", color: "white", fontSize: ".75em", textAlign : "center", display : "inline-block"}} label="Women"/>
-            <Tab style={{width : '70px', backgroundColor: "#000", color: "white", minWidth: '70px'}} label="Curve"/>
-            <Tab style={{width : '70px', backgroundColor: "#000", color: "white", minWidth: '70px'}} label="Men"/>
+            <div style={{width : '70px', height: "60px", marginLeft : "250px", backgroundColor: "#000", color: "white", borderBottom :"5px solid black"}}>
+              <p style={{paddingTop: "5px", paddingLeft: "4px"}}>Women</p>
+            </div>
+            <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>
+              <p style={{paddingTop: "5px", paddingLeft: "4px"}}>Curve</p>
+            </div>
+            <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>
+            <p style={{paddingTop: "5px", paddingLeft: "4px"}}>Men</p>
+            </div>
           </Tabs>
           <div style={{marginLeft : "20px"}}><Search/></div>
           <div style={{width: "70px"}}><SearchIcon /></div>

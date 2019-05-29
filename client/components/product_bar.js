@@ -23,8 +23,8 @@ const ProductBar = (props) => {
               choices = {
                 ["S10 Dresses", "New Arrivals", "Little White Dress", "Little Black Dress", "Little Red Dress","Girls Night Out", "Prom", "Luxe",
                 "Special Occasion", "Mini Dresses", "Midi Dresses", "Maxi Dresses", "Everyday Dresses", "Sale Dresses"
-            ]
-                } 
+                ]
+              } 
               title="Dresses"
               />
           </div>
