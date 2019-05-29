@@ -53,66 +53,8 @@ const theme = {
   }
 };
 
-const languages = [
-  {
-    name: 'Shorts',
-  },
-  {
-    name: 'Jeans',
-  },
-  {
-    name: 'Tank Top',
-  },
-  {
-    name: 'Shoes',
-  },
-  {
-    name: 'Sandals',
-  },
-  {
-    name: 'Blue Hat',
-  },
-  {
-    name: 'Green Shorts',
-  },
-  {
-    name: 'Purple Glasses',
-  },
-  {
-    name: 'Indigo Shirt',
-  },
-  {
-    name: 'Pink Gloves',
-  },
-  {
-    name: 'Purple Bracelet',
-  },
-  {
-    name: 'Yellow Shorts',
-  },
-  {
-    name: 'Red Necklace',
-  },
-  {
-    name: 'Silver Glasses',
-  }
-];
-
-
 function escapeRegexCharacters(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-function getSuggestions(value) {
-  const escapedValue = escapeRegexCharacters(value.trim());
-  
-  if (escapedValue === '') {
-    return [];
-  }
-
-  const regex = new RegExp('^' + escapedValue, 'i');
-
-  return languages.filter(language => regex.test(language.name));
 }
 
 function getSuggestionValue(suggestion) {
@@ -140,7 +82,6 @@ class Search extends React.Component {
   }
   
   getSuggestions(value) {
-    // return this.props.productInfo;
     const escapedValue = escapeRegexCharacters(value.trim());
   
     if (escapedValue === '') {
@@ -159,7 +100,6 @@ class Search extends React.Component {
   }
 
   onChange(event, { newValue, method }){
-    console.log(this.props.productInfo);
     this.setState({
       value: newValue
     });
