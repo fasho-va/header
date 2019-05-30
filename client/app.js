@@ -10,7 +10,7 @@ class App extends React.Component {
     }
   }
   componentWillMount() {
-    axios.get("/api/info/")
+    axios.get("http://ec2-54-175-150-114.compute-1.amazonaws.com/api/info/")
     .then(info => {
       return info.data;
     })
@@ -19,6 +19,7 @@ class App extends React.Component {
         infoList : info,
       })
     })
+    .catch(err => console.log(err));
   }
 
   render() {
