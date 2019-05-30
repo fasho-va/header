@@ -61,11 +61,11 @@ function getSuggestionValue(suggestion) {
   return suggestion.name;
 }
 
-function renderSuggestion(suggestion) {
-  return (
-    <Suggestion name={suggestion.name} uuid={suggestion.uuid} price={suggestion.price}/>
-  );
-}
+// function renderSuggestion(suggestion) {
+//   return (
+//     <Suggestion name={suggestion.name} uuid={suggestion.uuid} price={suggestion.price} updateUuid = {props.updateUuid}/>
+//   );
+// }
 
 class Search extends React.Component {
   constructor(props) {
@@ -74,11 +74,19 @@ class Search extends React.Component {
     this.state = {
       value: '',
       suggestions: [],
+      uuid: '',
     };
     this.onChange = this.onChange.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
-    this.getSuggestions = this.getSuggestions.bind(this);    
+    this.getSuggestions = this.getSuggestions.bind(this);
+    this.renderSuggestion = this.renderSuggestion.bind(this);    
+  }
+
+  renderSuggestion(suggestion) {
+    return (
+      <Suggestion name={suggestion.name} uuid={suggestion.uuid} price={suggestion.price} updateUuid = {this.props.updateUuid}/>
+    );
   }
   
   getSuggestions(value) {
@@ -131,7 +139,7 @@ class Search extends React.Component {
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
+        renderSuggestion={this.renderSuggestion}
         inputProps={inputProps}
         theme={theme}
       />

@@ -9,14 +9,20 @@ import PersonIcon from '@material-ui/icons/Person';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import Search from '../components/search_bar';
+import Axios from "axios";
 
 const InfoBar = (props) => {
+
+  function testFunc() {
+    console.log("clicked!!!!!!");
+  }
+
   return (
     <div>
       <AppBar color="white" position="static">
         <Toolbar>
           <TypoGraphy variant="title">
-            Fashova
+            <p>Fashova</p>
           </TypoGraphy>
           <Tabs>
             <div style={{width : '70px', height: "60px", marginLeft : "250px", backgroundColor: "#000", color: "white", borderBottom :"5px solid black"}}>
@@ -29,11 +35,18 @@ const InfoBar = (props) => {
             <p style={{paddingTop: "5px", paddingLeft: "4px"}}>Men</p>
             </div>
           </Tabs>
-          <div style={{marginLeft : "20px"}}><Search productInfo={props.productInfo}/></div>
-          <div style={{width: "100px", backgroundColor: "black", marginRight: "20px"}}><SearchIcon style ={{color: "white", marginLeft: "35px"}}/></div>
-          <div><PersonIcon /></div>
-          <div style={{margin: "10px"}}><FavoriteIcon /></div>
-          <div style={{marginLeft:"5px"}}><CardTravelIcon /></div>
+          <div style={{marginLeft : "20px"}}><Search productInfo={props.productInfo} updateUuid = {props.updateUuid}/></div>
+          <div style={{width: "100px", backgroundColor: "black", marginRight: "20px"}}>
+            <SearchIcon style ={{color: "white", marginLeft: "35px"}}/>
+          </div>
+          <div>
+            <PersonIcon />
+          </div>
+          <div style={{margin: "10px"}}>
+            <FavoriteIcon /></div>
+          <div style={{marginLeft:"5px"}}>
+            <CardTravelIcon />
+          </div>
         </Toolbar>
       </AppBar>
     </div>
