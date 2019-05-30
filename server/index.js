@@ -14,15 +14,14 @@ app.use(bodyParser());
 
 //routes
 app.get("/api/info", (req,res) => {
-  res.send("worked");
-  // db.retrieveInfo((err,info) => {
-  //   if (err) {
-  //     console.log("error", err);
-  //   } else {
-  //     res.status(200);
-  //     res.send(info);
-  //   }
-  // })
+  db.retrieveInfo((err,info) => {
+    if (err) {
+      console.log("error", err);
+    } else {
+      res.status(200);
+      res.send(info);
+    }
+  })
 })
 
 
