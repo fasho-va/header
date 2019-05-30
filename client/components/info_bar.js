@@ -10,7 +10,6 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import Search from '../components/search_bar';
 
-
 const InfoBar = (props) => {
   return (
     <div>
@@ -31,7 +30,7 @@ const InfoBar = (props) => {
             </div>
           </Tabs>
           <div style={{marginLeft : "20px"}}><Search productInfo={props.productInfo}/></div>
-          <div style={{width: "70px"}}><SearchIcon /></div>
+          <div style={{width: "100px", backgroundColor: "black", marginRight: "20px"}}><SearchIcon style ={{color: "white", marginLeft: "35px"}}/></div>
           <div><PersonIcon /></div>
           <div style={{margin: "10px"}}><FavoriteIcon /></div>
           <div style={{marginLeft:"5px"}}><CardTravelIcon /></div>

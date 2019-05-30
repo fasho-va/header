@@ -10,7 +10,7 @@ class App extends React.Component {
     }
   }
   componentWillMount() {
-    axios.get("http://ec2-52-23-195-154.compute-1.amazonaws.com/api/info/")
+    axios.get("http://localhost:3004/api/info/")
     .then(info => {
       return info.data;
     })

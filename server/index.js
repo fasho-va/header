@@ -4,10 +4,12 @@ const db = require("../database/index");
 const app = express();
 const cors = require("cors");
 const port = 3004;
+const bodyParser = require("body-parser");
 
 //middlewear
 app.use(express.static('public'));
 app.use(cors());
+app.use(bodyParser());
 
 
 //routes
