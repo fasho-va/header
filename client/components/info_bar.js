@@ -31,17 +31,17 @@ const InfoBar = (props) => {
           </TypoGraphy> */}
           <Tabs>
             <div style={{width : '70px', height: "60px", marginLeft : "15px", backgroundColor: "#000", color: "white", borderBottom :"5px solid black"}}>
-              <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "4px"}}>
+              <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "10px"}}>
                 Women
               </p>
             </div>
             <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>
-              <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "4px"}}>
+              <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "15px"}}>
                 Curve
               </p>
             </div>
             <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>
-              <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "4px"}}>
+              <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "20px"}}>
                 Men
               </p>
             </div>
