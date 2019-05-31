@@ -6,11 +6,7 @@
   margin-left: 50px; 
   cursor: pointer;
 }
-@media screen and (max-width: 900px) {
-  .logo {
-    display: none;
-  }
-}
+
 #womensTab {
   width : 70px; 
   height: 60px; 
@@ -46,4 +42,32 @@
   margin-left: 5px;
 }
 
+#hiddenLogo {
+  margin: 0 auto 10 auto;
+  display: none;
+}
 
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #womensTab, .othersTab {
+    display: none;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #hiddenLogo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #favoriteIconDiv, #cardTravelIconDiv, #personIconDiv {
+    display: none;
+  }
+}

@@ -35,6 +35,7 @@ const InfoBar = (props) => {
 
   return (
     <div>
+      <img className = "logo" id ="hiddenLogo" src ={require("../logo.png")}/>  
       <AppBar color="white" position="static">
         <Toolbar>
           <img className = "logo" src ={require("../logo.png")}/>  
@@ -61,7 +62,7 @@ const InfoBar = (props) => {
           <div id = "searchIconDiv">
             <SearchIcon style ={{color: "white", marginLeft: "35px"}}/>
           </div>
-          <div>
+          <div id = "personIconDiv">
             <PersonIcon style ={{cursor: "pointer"}} onMouseOver = {iconMouseOver} onMouseLeave = {iconMouseLeave} />
           </div>
           <div id = "favoriteIconDiv">
