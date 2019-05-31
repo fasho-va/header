@@ -12,9 +12,10 @@ const Suggestion = (props) => {
 
 
   return (
-    <div style = {{fontSize: ".80em"}} onClick= {() => props.updateUuid(props.uuid)}>
-      <p><img src ={`https://s3.us-east-2.amazonaws.com/fashovapictures/${paddedUuid}_1.jpg`} style ={{height : "50px", width : "25px"}}/>{props.name}</p>
-      <p>{props.price}</p>
+    <div style = {{fontSize: ".80em", clear : "both"}} onClick= {() => props.updateUuid(props.uuid)}>
+      <img src ={`https://s3.us-east-2.amazonaws.com/fashovapictures/${paddedUuid}_1.jpg`} style ={{height : "50px", width : "40px", float: "left", marginRight : "10px"}}/>
+      <p>{props.name}</p>
+      <p style = {{fontWeight : "bold"}}>{props.price}</p>
     </div>
   );
 }
