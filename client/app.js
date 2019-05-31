@@ -8,8 +8,9 @@ class App extends React.Component {
     this.state = {
       infoList : [],
     }
-    this.getSearchUuid = this.getSearchUuid.bind(this);
+    this.updateUuid = this.updateUuid.bind(this);
   }
+
   componentWillMount() {
     axios.get("http://ec2-52-23-195-154.compute-1.amazonaws.com/api/info/")
     .then(info => {
@@ -21,10 +22,6 @@ class App extends React.Component {
       })
     })
     .catch(err => console.log(err));
-  }
-
-  getSearchUuid() {
-    console.log("clicked!");
   }
 
   updateUuid(uuid) {

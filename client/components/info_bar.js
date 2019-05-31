@@ -9,23 +9,19 @@ import PersonIcon from '@material-ui/icons/Person';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import Search from '../components/search_bar';
-import Axios from "axios";
 
 const InfoBar = (props) => {
-
-  function testFunc() {
-    console.log("clicked!!!!!!");
-  }
 
   return (
     <div>
       <AppBar color="white" position="static">
         <Toolbar>
-          <TypoGraphy variant="title">
-            <p>Fashova</p>
-          </TypoGraphy>
+          <img src ={require("../logo.png")} style ={{height : "50px", width : "250px", marginLeft: "50px"}}/>  
+          {/* <TypoGraphy variant="title">  
+            <p style={{fontSize: "2em", padding :"0px", margin: "0 0 0 50px", letterSpacing: ".2em"}}>Fashova</p>
+          </TypoGraphy> */}
           <Tabs>
-            <div style={{width : '70px', height: "60px", marginLeft : "250px", backgroundColor: "#000", color: "white", borderBottom :"5px solid black"}}>
+            <div style={{width : '70px', height: "60px", marginLeft : "15px", backgroundColor: "#000", color: "white", borderBottom :"5px solid black"}}>
               <p style={{paddingTop: "5px", paddingLeft: "4px"}}>Women</p>
             </div>
             <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>

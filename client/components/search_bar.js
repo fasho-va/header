@@ -61,11 +61,6 @@ function getSuggestionValue(suggestion) {
   return suggestion.name;
 }
 
-// function renderSuggestion(suggestion) {
-//   return (
-//     <Suggestion name={suggestion.name} uuid={suggestion.uuid} price={suggestion.price} updateUuid = {props.updateUuid}/>
-//   );
-// }
 
 class Search extends React.Component {
   constructor(props) {
