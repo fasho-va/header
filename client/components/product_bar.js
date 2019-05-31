@@ -6,9 +6,20 @@ import Toolbar from '@material-ui/core/Toolbar';
 import ProductMenu from "./product_menu";
 
 const ProductBar = (props) => {
+
+  const hoverHandler = event => {
+    const e1 = event.target.style;
+    e1.textDecoration = "underline";
+  }
+
+  const mouseLeaveHandler = event => {
+    const e1 = event.target.style;
+    e1.textDecoration = "none";
+  }
+
   return (
     <div style ={{display: "flex", flexWrap : "wrap", justifyContent: "center", backgroundColor : "black"}}>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Wear The Pants", "Tees, Tanks, and Shorts","New Dresses","New Matching Sets","New Swim","New Jeans","New BodySuits","New Graphic Tees",
@@ -18,7 +29,7 @@ const ProductBar = (props) => {
               title="New Arrivals"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["S10 Dresses", "New Arrivals", "Little White Dress", "Little Black Dress", "Little Red Dress","Girls Night Out", "Prom", "Luxe",
@@ -28,7 +39,7 @@ const ProductBar = (props) => {
               title="Dresses"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Denim Shorts", "Skinny", "Boyfriend & Tomboy", "Flare & Bootcut", "High Rise", "Mid Rise", "Low Rise", "Distressed", "Color",
@@ -38,7 +49,7 @@ const ProductBar = (props) => {
               title="Jeans"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Heels", "Sandals", "Sneakers","Boots & Booties","Flats","Glass Collection","Sale Shoes"]
@@ -46,7 +57,7 @@ const ProductBar = (props) => {
               title="Shoes"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Two-Piece Swimsuits", "One-Piece Swimsuits", "Cover-Ups","Neon Brights","The Black Collection","Red, White, and Blue Swim",
@@ -56,7 +67,7 @@ const ProductBar = (props) => {
               title="Swimsuits"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Tanks & Sleeveless", "Short Sleeve","Long Sleeve","Basic","Sale"]
@@ -64,7 +75,7 @@ const ProductBar = (props) => {
               title="Bodysuits"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Tanks & Sleeveless", "Short Sleeve", "Long Sleeve", "Sale"]
@@ -72,7 +83,7 @@ const ProductBar = (props) => {
               title="Shirts & Blouses"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Tanks & Sleeveless", "Short Sleeve", "Long Sleeve", "Graphics", "Crop Tops", "Off Shoulder", "Sale"]
@@ -80,7 +91,7 @@ const ProductBar = (props) => {
               title="Fashion Tops"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Music Graphic Tees", "Oversized", "Short Sleeve", "Crop Tops", "BodySuits", "Long Sleeve", "Hoodies & Sweatshirts","Sale"]
@@ -88,7 +99,7 @@ const ProductBar = (props) => {
               title="Graphic Tees"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Basic Bodysuits", "Tanks & Sleeveless", "Short Sleeve", "Long Sleeve", "Sale"]
@@ -96,7 +107,7 @@ const ProductBar = (props) => {
               title="Basic Tops"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Biker Shorts", "Denim Shorts", "Tie Waist", "Bermuda", "Booty Shorts", "Distressed", "High Rise", "Mid Rise", "Low Rise", "Color Shop"]
@@ -104,7 +115,7 @@ const ProductBar = (props) => {
               title="Shorts"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "$15 Pants", "Pants", "Skirts", "Denim Skirts", "Leggings", "Biker Shorts", "Denim Shorts", "Shorts",
@@ -114,7 +125,7 @@ const ProductBar = (props) => {
               title="Bottoms"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Short Sets", "Skirt Sets", "Pant Sets", "Wear To Work", "Sale Matching Sets"]
@@ -122,7 +133,7 @@ const ProductBar = (props) => {
               title="Matching Sets"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Rompers", "Jumpsuits", "Sale Rompers and Jumpsuits"]
@@ -130,7 +141,7 @@ const ProductBar = (props) => {
               title="Rompers and Jumpsuits"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Prom Dresses", "Prom Shoes", "Prom Accessories", "Lingerie Essentials", "Prom Curve & Plus"]
@@ -138,7 +149,7 @@ const ProductBar = (props) => {
               title="Prom"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Curve + Plus"]
@@ -146,7 +157,7 @@ const ProductBar = (props) => {
               title="Luxe"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Sexy Lingerie", "Bridal & Honeymoon", "Teddies + Babydolls", "Lingerie Sets", "Stockings", "Lingerie Essentials",
@@ -156,7 +167,7 @@ const ProductBar = (props) => {
               title="Lingerie"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Make A Move", "Active Tops", "Active Bottoms", "Active Sets", "Graphic Tees", "Sale Activewear"]
@@ -164,7 +175,7 @@ const ProductBar = (props) => {
               title="Activewear"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Blazers", "Denim", "Kimonos", "Faux Fur", "Faux Leather + Suede", "Lightweight", "Outerwear", "Sale Jackets"]
@@ -172,7 +183,7 @@ const ProductBar = (props) => {
               title="Jackets"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Cardigans & Sweater Coats", "Pullovers"]
@@ -180,7 +191,7 @@ const ProductBar = (props) => {
               title="Sweaters"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Handbags", "Sunglasses", "Belts", "Hats & Scarves", "Legwear", "Hair Accessories", "Beauty", "Jewelry","Earrings", "Necklaces",
@@ -189,7 +200,7 @@ const ProductBar = (props) => {
               title="Accessories"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Matching Sets", "Dresses", "Tops", "Jackets", "Bottoms", "Plus"]
@@ -197,7 +208,7 @@ const ProductBar = (props) => {
               title="Wear To Work"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Back In Stock", "Best Sellers", "Coming Soon", "Cardi B SS 19", "Cardi Holiday 18", "Kylie", "Neon Collection", "The Vacation Shop"]
@@ -205,7 +216,7 @@ const ProductBar = (props) => {
               title="Collections"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["New Arrivals", "Plus Sale", "Dresses", "Black Dresses", "Jeans", "Leggings", "Bottoms", "Jackets", "Sweaters"]
@@ -213,7 +224,7 @@ const ProductBar = (props) => {
               title="Plus Size & Curve"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["$10 Dreses", "$15 Pants", "Sale Dresses", "Sale Matching Sets", "Sale Shoes", "Sale Jeans", "Sale Tops", "Sale Shorts"]
@@ -221,7 +232,7 @@ const ProductBar = (props) => {
               title="Sale"
               />
           </div>
-          <div style = {{margin: "10px", color: "white"}}>
+          <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {
                 ["Blowout", "$5 and Under", "$10 and Under", "$15 and Under", "$20 and Under"]
