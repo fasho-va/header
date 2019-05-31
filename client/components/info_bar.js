@@ -7,6 +7,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import Search from '../components/search_bar';
+import "../styles/info_bar_styles.css";
 
 const InfoBar = (props) => {
 
@@ -36,37 +37,37 @@ const InfoBar = (props) => {
     <div>
       <AppBar color="white" position="static">
         <Toolbar>
-          <img src ={require("../logo.png")} style ={{height : "50px", width : "250px", marginLeft: "50px", cursor: "pointer"}}/>  
+          <img className = "logo" src ={require("../logo.png")}/>  
           <Tabs style = {{fontFamily : "Roboto"}}>
-            <div style={{width : '70px', height: "60px", marginLeft : "15px", backgroundColor: "#000", color: "white", borderBottom :"5px solid black"}}>
+            <div id = "womensTab">
               <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "10px", cursor: "pointer"}}>
                 Women
               </p>
             </div>
-            <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>
+            <div className = "othersTab">
               <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "15px", cursor: "pointer"}}>
                 Curve
               </p>
             </div>
-            <div style={{width : '70px', backgroundColor: "white", color: "#000", border: "1px solid grey"}}>
+            <div className = "othersTab">
               <p onMouseOver = {hoverHandler} onMouseLeave = {mouseLeaveHandler} style={{paddingTop: "5px", paddingLeft: "20px", cursor: "pointer"}}>
                 Men
               </p>
             </div>
           </Tabs>
-          <div style={{marginLeft : "20px"}}>
+          <div id = "searchDiv">
             <Search productInfo={props.productInfo} updateUuid = {props.updateUuid}/>
           </div>
-          <div style={{width: "100px", backgroundColor: "black", marginRight: "20px", cursor: "pointer"}}>
+          <div id = "searchIconDiv">
             <SearchIcon style ={{color: "white", marginLeft: "35px"}}/>
           </div>
           <div>
             <PersonIcon style ={{cursor: "pointer"}} onMouseOver = {iconMouseOver} onMouseLeave = {iconMouseLeave} />
           </div>
-          <div style={{margin: "10px"}}>
+          <div id = "favoriteIconDiv">
             <FavoriteIcon  style ={{cursor: "pointer"}} onMouseOver = {iconMouseOver} onMouseLeave = {iconMouseLeave}/>
           </div>
-          <div style={{marginLeft:"5px"}}>
+          <div id ="cardTravelIconDiv">
             <CardTravelIcon  style ={{cursor: "pointer"}} onMouseOver = {iconMouseOver} onMouseLeave = {iconMouseLeave}/>
           </div>
         </Toolbar>

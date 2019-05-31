@@ -1,7 +1,5 @@
 import React from "react";
-import AppBar from '@material-ui/core/AppBar';
-import App from "../app";
-import Toolbar from '@material-ui/core/Toolbar';
+import "../styles/product_bar_styles.css";
 
 import ProductMenu from "./product_menu";
 
@@ -18,7 +16,7 @@ const ProductBar = (props) => {
   }
 
   return (
-    <div style ={{display: "flex", flexWrap : "wrap", justifyContent: "center", backgroundColor : "black"}}>
+    <div id = "productBarDiv" >
           <div onMouseOver = {hoverHandler} onMouseOut = {mouseLeaveHandler} style = {{margin: "10px", color: "white"}}>
             <ProductMenu 
               choices = {

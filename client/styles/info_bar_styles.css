@@ -1,0 +1,49 @@
+
+/* Info Bar */
+.logo {
+  height : 50px; 
+  width : 250px; 
+  margin-left: 50px; 
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+}
+#womensTab {
+  width : 70px; 
+  height: 60px; 
+  margin-left : 15px; 
+  background-color: #000; 
+  color: white;
+  border-bottom : 5px solid black;
+}
+
+.othersTab {
+  width : 70px; 
+  background-color: white; 
+  color: #000; 
+  border: 1px solid grey;
+}
+
+#searchDiv {
+  margin-left : 20px;
+}
+
+#searchIconDiv {
+  width: 100px; 
+  background-color: black; 
+  margin-right: 20px; 
+  cursor: pointer;
+}
+
+#favoriteIconDiv {
+  margin: 10px;
+}
+
+#cardTravelIconDiv {
+  margin-left: 5px;
+}
+
+

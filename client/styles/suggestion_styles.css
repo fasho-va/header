@@ -1,0 +1,11 @@
+.suggestionDiv {
+  font-size: .80em; 
+  clear : both;
+}
+
+.suggestionImage {
+  height : 50px;
+  width : 40px; 
+  float: left; 
+  margin-right : 10px;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/suggestion_styles.css"
 
 const Suggestion = (props) => {
 
@@ -12,7 +13,7 @@ const Suggestion = (props) => {
 
 
   return (
-    <div style = {{fontSize: ".80em", clear : "both"}} onClick= {() => props.updateUuid(props.uuid)}>
+    <div className = "suggestionDiv" onClick= {() => props.updateUuid(props.uuid)}>
       <img src ={`https://s3.us-east-2.amazonaws.com/fashovapictures/${paddedUuid}_1.jpg`} style ={{height : "50px", width : "40px", float: "left", marginRight : "10px"}}/>
       <p>{props.name}</p>
       <p style = {{fontWeight : "bold"}}>{props.price}</p>

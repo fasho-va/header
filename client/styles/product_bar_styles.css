@@ -1,0 +1,12 @@
+#productBarDiv {
+  display: flex; 
+  flex-wrap : wrap; 
+  justify-content: center; 
+  background-color : black;
+}
+
+@media screen and (max-width: 900px) {
+  #productBarDiv {
+      display: none;
+  }
+}
